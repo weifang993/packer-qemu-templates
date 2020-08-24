@@ -11,7 +11,10 @@ packer build -var-file=ubuntu1604.json ubuntu-vagrant.json
 ```bash
 packer build -var-file=ubuntu1804.json ubuntu-wei.json
 ```
+The image format is: qcow2. To get info on the image:
 
-## Issues ##
+* `qemu-img info ubuntu1804`
 
-==> qemu: Timeout waiting for SSH.
+### Known Issues ###
+
+Tried to use "disk_additional_size": ["10G"] and build failed.

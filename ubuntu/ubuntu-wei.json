@@ -19,7 +19,6 @@
         "passwd/username={{ user `ssh_username` }} ",
         "initrd=/install/initrd.gz -- <enter>"
       ],
-      "disk_additional_size": ["10G"],
       "disk_size": "{{ user `disk_size` }}",      
       "floppy_files": [
         "http/{{ user `preseed` }}"
