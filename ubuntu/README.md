@@ -9,5 +9,9 @@ packer build -var-file=ubuntu1604.json ubuntu-vagrant.json
 ## Create qcow2 image for use with kvm
 
 ```bash
-packer build -var-file=ubuntu1604.json ubuntu.json
+packer build -var-file=ubuntu1804.json ubuntu-wei.json
 ```
+
+## Issues ##
+
+==> qemu: Timeout waiting for SSH.
